@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单元测试 - 校园失物招领</title>
+  <style>
+    body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 720px; margin: 24px auto; padding: 0 16px; background: #f5f6f8; }
+    h1 { font-size: 20px; }
+    .note { color: #888; font-size: 13px; margin: 8px 0 16px; line-height: 1.6; }
+    #summary { font-size: 15px; font-weight: 700; padding: 10px 14px; border-radius: 10px; margin-bottom: 12px; }
+    .summary.ok, #summary.ok { background: #e8f9f0; color: #06ad56; }
+    .summary.bad, #summary.bad { background: #fdeceb; color: #e64340; }
+    .case { background: #fff; border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; font-size: 14px; border: 1px solid #eee; }
+    .case.pass { color: #06ad56; }
+    .case.fail { color: #e64340; }
+    .err-detail { color: #999; font-size: 12px; margin-top: 6px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>校园失物招领 · 单元测试结果</h1>
+  <div class="note">本页使用零依赖微型框架 test/mini-test.js 运行 test/core.test.js 中的全部用例（与 Node 的 <code>node --test test/</code> 是同一套断言）。</div>
+  <div id="summary">正在运行……</div>
+  <div id="results"></div>
+
+  <script src="../js/core.js"></script>
+  <script src="mini-test.js"></script>
+  <script src="core.test.js"></script>
+  <script>miniRun();</script>
+</body>
+</html>
