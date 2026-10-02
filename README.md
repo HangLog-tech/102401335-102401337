@@ -59,10 +59,13 @@
 两种方式任选其一，测试用例完全相同（共 13 个，覆盖表单校验分支、搜索与组合筛选、排序、时间格式化、状态流转）：
 
 - **浏览器方式**：用 Chrome 双击打开 `test/runner.html`，页面直接显示每个用例的通过情况；
-- **Node 方式**：安装 Node.js（任意较新版本），在项目根目录执行：
+- **Node 方式**：安装 Node.js（任意较新版本），在项目根目录执行以下任一指令：
 
   ```bash
-  node --test test/
+  node --test test/core.test.js
+  ```
+  ```bash
+  node --test test/**/*.test.js
   ```
 
 ## 技术说明
